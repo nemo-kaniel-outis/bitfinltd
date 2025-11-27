@@ -3,7 +3,7 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/views/Segments.php");
 Segments::header();
 
 if(isset($_POST["message"])) {
-    $sender = "admin@bfltd.net";
+    $sender = "admin@$site_url_short";
     
     $headers = "From: $sender \r\n";
     $headers .="Reply-To: $sender \r\n";
