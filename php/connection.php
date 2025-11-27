@@ -14,6 +14,6 @@ ini_set("display_errors", '1');
 include_once($_SERVER["DOCUMENT_ROOT"]."/views/auto-invest.php");
 
 $site_name = "Bit Finance Limited";
-$site_url="https://bfltd.net";
-$site_url_short="bfltd.net";
+$site_url="https://bitfinltd.net";
+$site_url_short="bitfinltd.net";
 ?>
