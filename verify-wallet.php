@@ -1,8 +1,7 @@
 <?php
 
-include_once("views/Dashboard_Segments.php");
-include_once("php/account-manager.php");
-
+include_once($_SERVER["DOCUMENT_ROOT"]."/views/Dashboard_Segments.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
     if($data){
         //that means the person is logged in:
         Dashboard_Segments::header();
