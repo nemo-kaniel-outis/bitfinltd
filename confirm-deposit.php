@@ -33,25 +33,25 @@ foreach($br_data as $b){
                     <html>
                     <head>
                         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo"/>
-                                <link rel="stylesheet" href="https://bitfinanceinvestment.com/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+                                <link rel="stylesheet" href="$site_url/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
                 
                     </head>
                     <body style ="font-family:Trirong;">
                         <div style="position:relative">
-                            <img src="https://bitfinanceinvestment.com/static/images/logo-bitfinance.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                            <img src="$site_url/static/images/logo-bitfinance.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                         </div>
                         <h2 style="color:#00008b;font-family:Arimo;text-align:center">Bit Finance Investment</h2>
                             <p  style ="font-family:Trirong;">Hello $i_name, Your <b>Investment</b> of $dep has been injected into the blockchain and is currently awaiting approval by the system.</p>
                             <p>Do well to check the Transaction page on your dashboard from time to time to view your profits.</p>
-                            <p style="margin-bottom:30px">For further enquiries, you can check out our <b><a href="https://bitfinanceinvestment.com/faqs"  style="color:#ff3c00">Frequently asked questions</a></b> page or <b><a href="https://bitfinanceinvestment.com/contact" style="color:#ff3c00">contact us</a></b> directly if our page doesn't answer your questions.</p>
+                            <p style="margin-bottom:30px">For further enquiries, you can check out our <b><a href="$site_url/faqs"  style="color:#ff3c00">Frequently asked questions</a></b> page or <b><a href="$site_url/contact" style="color:#ff3c00">contact us</a></b> directly if our page doesn't answer your questions.</p>
                             
                             
-                            <a href="https://bitfinanceinvestment.com/transactions" style="color:#ff3c00;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #ff3c00;border:2px solid #ff3c00;width:8%;margin-left:30%;margin-right:20%">View Transactions</a>
+                            <a href="$site_url/transactions" style="color:#ff3c00;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #ff3c00;border:2px solid #ff3c00;width:8%;margin-left:30%;margin-right:20%">View Transactions</a>
                     </body>
                     </html>
                 HTML;
 
-                $sender = "admin@bitfinanceinvestment.com";
+                $sender = "admin@$site_url_short";
 
                 $headers = "From: $sender \r\n";
                 $headers .="Reply-To: $sender \r\n";
