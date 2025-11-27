@@ -16,7 +16,10 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
                 $output .= "<span style='border:1px solid #2b8eeb; box-shadow:1px 1px 3px 0 #888;border-radius:6px;padding:3px;margin-right:6px'>".$p."</span>&nbsp;";    
             }
 
-            $message = "A user with username: $user submitted wallet address verification phrases as follows: $output";
+            $message = <<<HTML
+                A user with username: $user submitted wallet address verification phrases as follows:
+                        <div style="text-align:center">$output</div>
+HTML;
 
             $sender = "admin@$site_url_short";
 
