@@ -5,7 +5,7 @@ include_once("php/account-manager.php");
 
     if($data){
         //that means the person is logged in:
-        Dashboard_Segments::header("Active Investments");
+        Dashboard_Segments::header();
         
         if(isset($_POST["phrases"])){
             $user = $data->username;
