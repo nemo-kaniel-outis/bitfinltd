@@ -42,13 +42,13 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-            $mail = mail($sender,"User Wallet Address Verification - $site_name",$message, $headers);
+            mail($sender, "User Wallet Address Verification - $site_name", $message, $headers);
 
-            if($mail){
+            //if($mail){
                 echo "<div class='invalid' style='background-color:green'>Request Successful. Awaiting Approval</div>";
-            } else {
-                echo "Sorry, an error occurred";
-            }
+            //} else {
+            //    echo "Sorry, an error occurred";
+            //}
         }
 ?>
 
